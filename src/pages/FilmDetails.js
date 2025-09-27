@@ -34,6 +34,7 @@ function FilmDetails() {
       <p>Release Year: {film.release_year}</p>
       <p>Language: {film.language}</p>
       <p>Rating: {film.rating}</p>
+      <p>Genres: {film.genres && film.genres.join(", ")}</p>
 
       {film.special_features && (
         <p><strong>Special Features:</strong> {film.special_features}</p>
@@ -55,3 +56,4 @@ function FilmDetails() {
 }
 
 export default FilmDetails;
+
